@@ -31,6 +31,9 @@ npm install
 npm run dev
 ```
 
+## Розгортання React Vite проекту на Vercel
+посилання на перегляд проекту: https://react-hook-use.vercel.app/
+
 ## 🇬🇧 Project Description
 
 This project demonstrates the usage of the experimental React `use` hook for handling Promise objects. The project is designed to showcase a modern approach to handling asynchronous data in React applications.
@@ -68,3 +71,5 @@ npm install
 # Run development server
 npm run dev
 ```
+## Deploying a React Vite project on Vercel
+link to view the project: https://react-hook-use.vercel.app/
