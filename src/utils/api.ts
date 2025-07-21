@@ -8,11 +8,9 @@ export const fetchDataOptimized: Promise<UserInterface[]> = axios
   .then((response) => {
     return new Promise<UserInterface[]>((resolve) => setTimeout(() => resolve(response.data), 1000))
   })
-  .catch(() => [
-    {
-      id: 0,
-      name: 'Error loading Data',
-      email: 'error',
-      username: 'error'
+  .catch((error) => {
+    if (axios.isAxiosError(error)) {
+      throw new Error(`Error fetching data: ${error.response?.data}`)
     }
-  ])
+    throw new Error('An unknown error occurred')
+  })
